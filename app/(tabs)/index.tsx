@@ -80,9 +80,9 @@ export default function HomeScreen() {
           {capturedImages.length > 0 && (
             <TouchableOpacity
               style={styles.albumButton}
-              onPress={handleShowAlbum}
+              
             >
-              <Text style={styles.albumText}>View Album</Text>
+              <Ionicons name="image-outline" style={styles.albumButton} onPress={handleShowAlbum}></Ionicons>
             </TouchableOpacity>
           )}
         </View>
@@ -146,11 +146,10 @@ const styles = StyleSheet.create({
   },
   albumButton: {
     position: "absolute",
-    top: 40,
-    right: 5,
-    backgroundColor: "blue",
-    padding: 10,
-    borderRadius: 5,
+    fontSize: 36,
+    bottom: 30,
+    right: 45,
+    color: '#fff'
   },
   albumText: {
     fontSize: 18,
